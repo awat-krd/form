@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="particles-container"></div>
+
+    <div class="loading-container">
+        <div class="loading-dots">
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="lang-switcher">
+            <select id="language-switcher">
+                <option value="krb" selected>کوردی بادینی</option>
+                <option value="krs">کوردی سورانی</option>
+                <option value="ar">عربی</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+
+        <div class="dc">
+            <div class="chart-container">
+                <div class="chart-wrapper"></div>
+            </div>
+        </div>
+
+        <h2 class="form-title" data-translate="title">پەیوەندی</h2>
+        <p class="form-subtitle" data-translate="subtitle">لە ماوەی ٢٤ کاتژمێرێکدا پەیوەندیت پێدەکەینەوە</p>
+        
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="c4a68b5d-6eb4-436a-bd5f-9556354de876">
+
+            <div class="form-group">
+                <label data-translate="fullname">ناوی تەواو</label>
+                <input type="text" name="fullname" required>
+            </div>
+
+            <div class="form-group">
+                <label data-translate="phone">ژمارەی مۆبایل</label>
+                <div class="phone-input">
+                    <select name="country_code" class="country-code" required>
+                        <option value="+355 (Albania)">🇦🇱 +355</option>
+                        <option value="+43 (Austria)">🇦🇹 +43</option>
+                        <option value="+973 (Bahrain)">🇧🇭 +973</option>
+                        <option value="+32 (Belgium)">🇧🇪 +32</option>
+                        <option value="+387 (Bosnia and Herzegovina)">🇧🇦 +387</option>
+                        <option value="+359 (Bulgaria)">🇧🇬 +359</option>
+                        <option value="+86 (China)">🇨🇳 +86</option>
+                        <option value="+385 (Croatia)">🇭🇷 +385</option>
+                        <option value="+357 (Cyprus)">🇨🇾 +357</option>
+                        <option value="+420 (Czech Republic)">🇨🇿 +420</option>
+                        <option value="+45 (Denmark)">🇩🇰 +45</option>
+                        <option value="+20 (Egypt)">🇪🇬 +20</option>
+                        <option value="+358 (Finland)">🇫🇮 +358</option>
+                        <option value="+33 (France)">🇫🇷 +33</option>
+                        <option value="+49 (Germany)">🇩🇪 +49</option>
+                        <option value="+30 (Greece)">🇬🇷 +30</option>
+                        <option value="+36 (Hungary)">🇭🇺 +36</option>
+                        <option value="+354 (Iceland)">🇮🇸 +354</option>
+                        <option value="+98 (Iran)">🇮🇷 +98</option>
+                        <option value="+964 (Iraq)" selected>🇮🇶 +964</option>
+                        <option value="+353 (Ireland)">🇮🇪 +353</option>
+                        <option value="+39 (Italy)">🇮🇹 +39</option>
+                        <option value="+962 (Jordan)">🇯🇴 +962</option>
+                        <option value="+965 (Kuwait)">🇰🇼 +965</option>
+                        <option value="+961 (Lebanon)">🇱🇧 +961</option>
+                        <option value="+218 (Libya)">🇱🇾 +218</option>
+                        <option value="+352 (Luxembourg)">🇱🇺 +352</option>
+                        <option value="+356 (Malta)">🇲🇹 +356</option>
+                        <option value="+31 (Netherlands)">🇳🇱 +31</option>
+                        <option value="+389 (North Macedonia)">🇲🇰 +389</option>
+                        <option value="+47 (Norway)">🇳🇴 +47</option>
+                        <option value="+968 (Oman)">🇴🇲 +968</option>
+                        <option value="+970 (Palestine)">🇵🇸 +970</option>
+                        <option value="+48 (Poland)">🇵🇱 +48</option>
+                        <option value="+351 (Portugal)">🇵🇹 +351</option>
+                        <option value="+974 (Qatar)">🇶🇦 +974</option>
+                        <option value="+40 (Romania)">🇷🇴 +40</option>
+                        <option value="+7 (Russia)">🇷🇺 +7</option>
+                        <option value="+966 (Saudi Arabia)">🇸🇦 +966</option>
+                        <option value="+381 (Serbia)">🇷🇸 +381</option>
+                        <option value="+421 (Slovakia)">🇸🇰 +421</option>
+                        <option value="+386 (Slovenia)">🇸🇮 +386</option>
+                        <option value="+34 (Spain)">🇪🇸 +34</option>
+                        <option value="+46 (Sweden)">🇸🇪 +46</option>
+                        <option value="+41 (Switzerland)">🇨🇭 +41</option>
+                        <option value="+963 (Syria)">🇸🇾 +963</option>
+                        <option value="+90 (Turkey)">🇹🇷 +90</option>
+                        <option value="+971 (UAE)">🇦🇪 +971</option>
+                        <option value="+44 (United Kingdom)">🇬🇧 +44</option>
+                    </select>
+                    <input type="tel" name="phone" class="phone-number" pattern="[0-9]{15}" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label data-translate="email">ئیمەیڵ</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label data-translate="language">زمانی پەسەند</label>
+                <select name="language" required>
+                    <option value="Kurdish-Badini" selected>کوردی بادینی</option>
+                    <option value="Kurdish-Sorani">کوردی سورانی</option>
+                    <option value="Arabic">عربی</option>
+                    <option value="English">English</option>
+                </select>
+            </div>
+
+            <div class="form-group message-group">
+                    <label class="message-label" data-translate="message">
+                    Message 
+                    </label>
+                    <textarea 
+                    name="message"
+                    class="message-input"
+                    rows="4"
+                    ></textarea>
+                </div>
+
+            <button type="submit" data-translate="submit">ناردنی پەیام</button>
+        </form>
+
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@vcgmarkets_duhok?_t=ZS-8uGjiBYkUFT&_r=1" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                </svg>
+            </a>
+            <a href="https://t.me/VCGmarketsduh0k" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/_forexmarkets?igsh=MWxmNzB5bWRwMTZnNg==" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+        </div>
+
+            <div class="numbers-container" dir="ltr">
+                <div class="number-box">
+                <div class="number-content">
+                    <span class="number-text">+964 0750 091 1000</span>
+                    <button class="copy-btn" aria-label="Copy number">
+                    <svg class="copy-icon" viewBox="0 0 24 24">
+                        <path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12V1z"/>
+                    </svg>
+                    <span class="copy-tooltip">Copy</span>
+                    </button>
+                </div>
+                </div>
+            
+                <div class="number-box">
+                <div class="number-content">
+                    <span class="number-text">+964 0750 480 7852</span>
+                    <button class="copy-btn" aria-label="Copy number">
+                    <svg class="copy-icon" viewBox="0 0 24 24">
+                        <path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12V1z"/>
+                    </svg>
+                    <span class="copy-tooltip">Copy</span>
+                    </button>
+                </div>
+                </div>
+            
+                <div class="copy-feedback">Copied to clipboard!</div>
+            </div>
+    </div>
+
+    <div id="form-message"></div>
+
+    <script src="js.js"></script>
+</body>
+</html>
