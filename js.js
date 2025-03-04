@@ -10,7 +10,8 @@ const translations = {
         submit: "هنارتنا نامێ",
         success: "نامه ب سەركەفتيانە هاتە هنارتن",
         error: "نامە نە هاتە هنارتن دوبارە هەولبدە",
-        networkError: "كێشه يا هەی ئينترنێتا خو تاقيكە و دوباره هە ولدە"
+        networkError: "كێشه يا هەی ئينترنێتا خو تاقيكە و دوباره هە ولدە",
+        copyright: "© ساڵێ %current_year% VCG MARKETS. هەموو مافان پارێزراون"
     },
     en: {
         title: "Communication form",
@@ -23,7 +24,8 @@ const translations = {
         submit: "Send Message",
         success: "Message sent successfully!",
         error: "Error sending message. Please try again.",
-        networkError: "Network error. Please check your connejction."
+        networkError: "Network error. Please check your connejction.",
+        copyright: "© %current_year% VCG MARKETS. All rights reserved"
     },
     ar: {
         title: "اتصل بنا",
@@ -36,7 +38,8 @@ const translations = {
         submit: "إرسال الرسالة",
         success: "تم إرسال رسالتك بنجاح!",
         error: "حدث خطأ. يرجى المحاولة مرة أخرى.",
-        networkError: "خطأ في الشبكة. يرجى التحقق من اتصالك."
+        networkError: "خطأ في الشبكة. يرجى التحقق من اتصالك.",
+        copyright: "© %current_year% VCG MARKETS. جميع الحقوق محفوظة"
     },
     krs: {
         title: "فورمێ پەیوەندیکردن",
@@ -49,7 +52,8 @@ const translations = {
         submit: "ناردنی پەیام",
         success: "نامە بەسەرکەوتویانە نێردرا",
         error: "نامە نە نێردرا تکایە دوبارە هەولبدە!",
-        networkError: "هێلەکەت کێشەی هەیە دوبارە هەولبدە."
+        networkError: "هێلەکەت کێشەی هەیە دوبارە هەولبدە.",
+        copyright: "© ساڵی %current_year% VCG MARKETS. هەموو مافەکان پارێزراون"
     }
 };
 
@@ -290,3 +294,20 @@ setTimeout(() => {
     feedback.style.backgroundColor = '#4a90e2';
 }, 2000);
 }
+
+function updateTranslations() {
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.dataset.translate;
+        let translation = translations[currentLang][key];
+        if (key === 'copyright') {
+            translation = translation.replace('%current_year%', new Date().getFullYear());
+        }
+        element.textContent = translation;
+    });
+    
+    // Update year in copyright
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+}
+
+// Initialize copyright year
+document.getElementById('current-year').textContent = new Date().getFullYear();
