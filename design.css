@@ -18,10 +18,12 @@
     body {
         min-height: 100vh;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         background: linear-gradient(135deg, #ff6b00, #ff9f4d, #ffd699);
         position: relative;
+        padding: 20px;
     }
 
     .particles-container {
@@ -524,3 +526,34 @@ to {
     input, select, textarea {
         font-size: 16px !important;
     }   
+
+    .copyright-bar {
+        margin-top: auto;
+        width: 100%;
+        max-width: 500px;
+        background: rgba(255, 255, 255, 0.9);
+        color: #ff6b00;
+        text-align: center;
+        padding: 8px 15px;
+        font-size: 0.8rem;
+        border-radius: 8px;
+        margin-top: 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(255, 107, 0, 0.1);
+    }
+    
+    @media (max-width: 768px) {
+        .copyright-bar {
+            font-size: 0.75rem;
+            padding: 6px 12px;
+            margin-top: 15px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .copyright-bar {
+            font-size: 0.7rem;
+            padding: 6px 10px;
+            margin-top: 10px;
+        }
+    }
