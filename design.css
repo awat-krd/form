@@ -154,6 +154,7 @@
     font-family: 'Segoe UI', system-ui, sans-serif;
     max-width: 500px;
     margin: 2rem auto;
+    color: #ff6b00;
     }
 
     .number-box {
@@ -163,6 +164,7 @@
     margin: 1rem 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: #ff6b00;
     }
 
     .number-box:hover {
@@ -175,6 +177,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    color: #ff6b00;
     }
 
     .number-text {
@@ -188,7 +191,7 @@
     }
 
     a .number-text {
-        color: inherit;
+        color: #ff6b00;
         text-decoration: none;
     }
 
