@@ -11,7 +11,7 @@ const translations = {
         success: "نامه ب سەركەفتيانە هاتە هنارتن",
         error: "نامە نە هاتە هنارتن دوبارە هەولبدە",
         networkError: "كێشه يا هەی ئينترنێتا خو تاقيكە و دوباره هە ولدە",
-        copyright: "© ساڵێ هەموو مافان پارێزراون"
+        copyright: "وێبسایت هاتیە دروستکرن ژ لایێ Kr_Artech"
     },
     en: {
         title: "Communication form",
@@ -25,7 +25,7 @@ const translations = {
         success: "Message sent successfully!",
         error: "Error sending message. Please try again.",
         networkError: "Network error. Please check your connejction.",
-        copyright: "© All rights reserved"
+        copyright: "Website Made By Kr_Artech"
     },
     ar: {
         title: "اتصل بنا",
@@ -39,7 +39,7 @@ const translations = {
         success: "تم إرسال رسالتك بنجاح!",
         error: "حدث خطأ. يرجى المحاولة مرة أخرى.",
         networkError: "خطأ في الشبكة. يرجى التحقق من اتصالك.",
-        copyright: "© جميع الحقوق محفوظة"
+        copyright: "تم إنشاء الموقع بواسطة Kr_Artech"
     },
     krs: {
         title: "فورمێ پەیوەندیکردن",
@@ -53,7 +53,7 @@ const translations = {
         success: "نامە بەسەرکەوتویانە نێردرا",
         error: "نامە نە نێردرا تکایە دوبارە هەولبدە!",
         networkError: "هێلەکەت کێشەی هەیە دوبارە هەولبدە.",
-        copyright: "© ساڵی هەموو مافەکان پارێزراون"
+        copyright: "ماڵپەڕی دروستکراوی Kr_Artech"
     }
 };
 
